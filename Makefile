@@ -16,12 +16,12 @@ install:
 		pip install -r requirements.txt
 		
 install-hadolint:
-	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.17.5/hadolint-Linux-x86_64
-	sudo chmod +x /bin/hadolint
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.18.0/hadolint-Linux-x86_64
+	chmod +x /bin/hadolint
 
 install-minikube:
-	sudo wget -O /bin/minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-	sudo chmod +x /bin/minikube
+	wget -O /bin/minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+	chmod +x /bin/minikube
 
 test:
 	# Additional, optional, tests could go here

@@ -13,12 +13,11 @@ COPY . app.py /app/
 # hadolint ignore=DL3013
 # RUN apt-get update
 RUN make install
-RUN make install-hadolint
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ## Step 4:
-# Expose port 80
-EXPOSE 80
+# Expose port 8080
+EXPOSE 8080
 
 ## Step 5:
 # Run app.py at container launch

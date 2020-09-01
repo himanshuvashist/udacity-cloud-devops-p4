@@ -1,1 +1,16 @@
-<paste log output from Kubernetes-mediated prediction, here>
+./run_kubernetes.sh himanshuvashist house-prediction                                                     
+pod/poo created
+NAME   READY   STATUS              RESTARTS   AGE
+poo    0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+
+./run_kubernetes.sh himanshuvashist house-prediction                                                  
+Error from server (AlreadyExists): pods "poo" already exists
+NAME   READY   STATUS    RESTARTS   AGE
+poo    1/1     Running   0          58s
+Forwarding from 127.0.0.1:8090 -> 8080
+Forwarding from [::1]:8090 -> 8080
+Handling connection for 8090
+
+
